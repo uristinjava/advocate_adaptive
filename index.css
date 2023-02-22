@@ -110,9 +110,9 @@ a {
     pointer-events: none;
 }
 
-.sub_nav_text {
+/* .sub_nav_text {
     pointer-events: none;
-}
+} */
 
 .call {
     color: white;
@@ -330,6 +330,7 @@ a {
 
 .adress a {
     margin-bottom: 10px;
+    transition: 0.5s;
 }
 
 .form_map {
@@ -353,7 +354,7 @@ a {
     margin-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    min-width: 385px;
+    min-width: 300px;
 }
 
 .img_form {
@@ -391,9 +392,11 @@ a {
     border: 2px solid gray;
     height: 100%;
     border-radius: 17px;
-
 }
 
+.adress a:hover {
+    transform: scale(1.5);
+}
 
 
 /*<<-----Specialization------>>*/
@@ -507,10 +510,11 @@ a {
         margin-bottom: 10px;
         font-size: 16px;
         pointer-events: all;
+        max-width: 300px;
     }
 
     .sub_contact_list {
-        width: 80%vw;
+        width: 80vw;
     }
 
     .specialization_box {
@@ -567,6 +571,10 @@ a {
 
     .specialization_box {
         margin: 0px;
+    }
+
+    .input_text {
+        width: 250px;
     }
 }
 
