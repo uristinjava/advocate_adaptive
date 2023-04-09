@@ -1,0 +1,35 @@
+.section_conteiner {
+    margin-top: 120px;
+    margin-bottom: 60px;
+    /* border: 1px solid gray; */
+    padding: 16px;
+
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.header_alarm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.img_police img {
+    filter: brightness(.8);
+    border-radius: 12px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+span {
+    color: blue;
+}
+
+h3 li {
+    list-style-type: circle;
+}

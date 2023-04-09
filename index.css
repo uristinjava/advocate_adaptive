@@ -19,6 +19,7 @@ a {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
 
 /*----------шапка сайта-----------------*/
@@ -84,6 +85,10 @@ a {
 
 }
 
+.buttom_call:hover {
+    animation: none;
+}
+
 @keyframes buttom_transform {
     0% {
         transform: scale(1);
@@ -121,7 +126,7 @@ a {
 /*------------Main--------------*/
 
 .main {
-    min-height: 85vh;
+    /* min-height: 85vh; */
     margin-top: 15vh;
 }
 
@@ -200,12 +205,40 @@ a {
 /*<--------PROMO-------->*/
 
 .promo {
-    margin-top: 60px;
+    /* margin-top: 60px; */
     margin-bottom: 60px;
 }
 
+.alarm {
+    text-align: center;
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+    border: 1px solid green;
+    border-radius: 16px;
+    padding: 3px;
+    background: white;
+    cursor: pointer;
+    z-index: 10;
+    animation: 4s ease 0s infinite normal none running buttom_transform;
+    transition: .3s ease;
+}
+
+.alarm ion-icon {
+    color: yellow;
+}
+
+.alarm:hover {
+    background-color: rgba(70, 233, 70, 1);
+    animation: none;
+}
+
+.alarm:hover h3 {
+    color: #fff;
+}
+
 .promo_box {
-    margin-top: 98px;
+    /* margin-top: 98px; */
     display: flex;
     align-items: center;
     box-shadow: 0px -1px 84px 7px rgb(238 238 238 / 32%);
@@ -216,6 +249,15 @@ a {
 .promo_photo {
     width: 250px;
     border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.promo_text li {
+    list-style-type: circle;
 }
 
 .promo_text_item {
@@ -237,6 +279,12 @@ a {
 }
 
 /*<<--------PROMO-------->>*/
+
+.main_title_heading {
+    display: flex;
+    gap: 6px;
+    margin-top: 20px;
+}
 
 
 .header_under_specialization {
@@ -304,7 +352,7 @@ a {
 
 /*<<------footer------>>*/
 .footer {
-    min-height: 3vh;
+    min-height: 25vh;
     border-top: 2px solid black;
     width: 100vw;
 }
@@ -318,6 +366,7 @@ a {
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
+    min-height: 10vh;
 }
 
 .copy_rights h3 {
