@@ -277,22 +277,24 @@
 
 
 
-                <form class="form">
+                <form action="telegram.php" method="POST" class="form">
 
                     <!-- Hidden Required Fields -->
-                    <input type="hidden" name="project_name" value="Адвокат самбу">
+                    <!-- <input type="hidden" name="project_name" value="Адвокат самбу">
                     <input type="hidden" name="admin_email" value="info@sambu.ru">
-                    <input type="hidden" name="form_subject" value="Запрос с сайта">
+                    <input type="hidden" name="form_subject" value="Запрос с сайта"> -->
                     <!-- END Hidden Required Fields -->
 
-                    <input name="имя" class="input_text" type="text" placeholder="Ваше имя">
-                    <input name="адрес почты" class="input_text" type="text" placeholder="Ваш контактный e-mail">
-                    <textarea name="сообщение" class="input_text text_message" name="" id="" cols="30" rows="26"
+                    <input name="name" class="input_text" type="text" placeholder="Ваше имя" required>
+                    <input name="phone" class="input_text" type="number" placeholder="Ваш контактный телефон" required>
+                    <input name="Email" class="input_text" type="email" placeholder="Ваш контактный Email">
+                    <textarea class="input_text text_message" name="msg" id="" cols="30" rows="20"
                         placeholder="Опишите вашу проблему">
                     </textarea>
                     <button type="submit" class="button_form">
                         <p>ОТПРАВИТЬ</p>
                     </button>
+                    <input type="checkbox" required>
                     <p style="text-align: center;">нажимая кнопку отправить,<br> вы даете свое согласие <br> на
                         обработку данных</p>
                 </form>

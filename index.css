@@ -431,6 +431,7 @@ a {
     background-color: rgba(70, 233, 70, 0.732);
     border-radius: 17px;
     transform: 1s;
+    margin-bottom: 1rem;
 }
 
 .button_form:hover {
