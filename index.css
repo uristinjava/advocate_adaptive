@@ -13,8 +13,22 @@ a {
     text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+    color: #fff;
+}
+
+body {
+    /* background-image: url(img/bg-texture.png); */
+}
+
 
 .wrapper {
+    background-color: rgba(5, 29, 125, 0.936);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -77,15 +91,10 @@ a {
 
 .buttom_call {
     text-align: center;
-    border: 1px solid green;
-    padding: 7px;
-    border-radius: 17px;
-    background-color: rgba(70, 233, 70, 0.732);
-    animation: buttom_transform 4s infinite;
-
 }
 
-.buttom_call:hover {
+
+.call:hover {
     animation: none;
 }
 
@@ -121,6 +130,11 @@ a {
 
 .call {
     color: white;
+    border: 1px solid green;
+    padding: 7px;
+    border-radius: 17px;
+    background-color: rgba(70, 233, 70, 0.732);
+    animation: buttom_transform 4s infinite;
 }
 
 /*------------Main--------------*/
@@ -128,6 +142,9 @@ a {
 .main {
     /* min-height: 85vh; */
     margin-top: 15vh;
+    width: 100%;
+
+
 }
 
 .book_shelf {
@@ -214,7 +231,7 @@ a {
     position: fixed;
     bottom: 5%;
     right: 10%;
-    border: 1px solid green;
+    border: 1px solid rgba(172, 9, 33, 0.989);
     border-radius: 16px;
     padding: 3px;
     background: white;
@@ -222,14 +239,20 @@ a {
     z-index: 10;
     animation: 4s ease 0s infinite normal none running buttom_transform;
     transition: .3s ease;
+    background-color: rgba(246, 10, 46, 0.989);
 }
 
-.alarm ion-icon {
-    color: yellow;
+.works_header {
+    color: #fff;
+}
+
+.alarm a h3 {
+    color: rgba(0, 0, 0, 0.995);
+
 }
 
 .alarm:hover {
-    background-color: rgba(70, 233, 70, 1);
+    background-color: rgba(74, 194, 44, 0.989);
     animation: none;
 }
 
@@ -286,6 +309,11 @@ a {
     margin-top: 20px;
 }
 
+.main_title_heading h4 {
+    font-size: 1.5rem;
+    text-shadow: rgb(255, 253, 253) 1px 0 10px;
+}
+
 
 .header_under_specialization {
     margin-bottom: 15px;
@@ -330,6 +358,7 @@ a {
     margin-bottom: 10px;
     padding: 6px 8px;
     text-align: center;
+    color: rgb(21, 21, 221);
 }
 
 .list_specializ {
@@ -338,6 +367,8 @@ a {
 
 .link_speciliz {
     margin-bottom: 10px;
+    color: rgb(21, 21, 221);
+
 }
 
 .more {
@@ -438,10 +469,18 @@ a {
     background-color: rgb(243, 243, 242);
 }
 
+.button_form:hover p {
+    color: blue;
+}
+
 .map {
     border: 2px solid gray;
     height: 100%;
     border-radius: 17px;
+}
+
+.adress a {
+    color: white;
 }
 
 .adress a:hover {
@@ -597,6 +636,7 @@ a {
 
     .call {
         font-size: 1rem;
+        animation: none;
     }
 
     .logo {
@@ -625,6 +665,15 @@ a {
 
     .input_text {
         width: 250px;
+    }
+
+    .link_text {
+        display: none;
+    }
+
+    .alarm {
+        left: 12px;
+        right: 12px;
     }
 }
 
